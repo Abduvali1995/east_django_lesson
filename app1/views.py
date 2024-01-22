@@ -8,6 +8,7 @@ def first_view(requets):
         <p>bugun juda qiziq narsa o`rganyapmiz</p>
         <a href="second_view"> <h2>Python</h2> </a>
          <a href="three_view"> <h2>Django</h2> </a>
+         <a href="five_view"> <h2>Html</h2> </a>
     '''
     return HttpResponse(html)
 
@@ -34,4 +35,12 @@ def four_view(request):
              <p>  C++ high level  programming  python was created by G.Rossum</p>
              <a href="three_view"><h2>Home</h2></a>
          '''
+    return HttpResponse(html)
+
+def five_view(request):
+    html = '''
+               <h1> Bu 4- sahifa C++ haqida ma`lumot beradi </h1>
+               <p>  C++ high level  programming  python was created by G.Rossum</p>
+               <a href="../"><h2>Home</h2></a>
+           '''
     return HttpResponse(html)
